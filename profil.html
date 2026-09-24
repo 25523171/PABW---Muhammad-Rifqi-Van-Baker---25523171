@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toys store</title>
+
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-baris">
+
+        <h1>toys store</h1>
+
+        <div>
+           <input type="checkbox" id="tema" class="pengalih-tema">
+           <label for="tema" class="tombol-tema">Tema gelap</label>
+        </div>
+
+    </div>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#daftar-mainan">Daftar Mainan</a></li>
+            <li><a href="#tambah-mainan">Tambah Mainan</a></li>
+            <li><a href="#tentang-kami">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- DAFTAR MAINAN -->
+
+    <section id="daftar-mainan">
+
+        <h2>Daftar Mainan</h2>
+
+        <p>
+            Selamat datang di halaman profil kami.
+            Di sini Anda dapat menemukan mainan yg anda cari...
+        </p>
+
+        <table>
+
+            <caption>Daftar Mainan Toys Store</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Nama Mainan</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Stok</th>
+                    <th scope="col">Kategori</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th scope="row">Prabubu</th>
+                    <td>Rp 100.000</td>
+                    <td>40</td>
+                    <td>Figur</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Hirono</th>
+                    <td>Rp 200.000</td>
+                    <td>10</td>
+                    <td>Figur</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Lego</th>
+                    <td>Rp 60.000</td>
+                    <td>50</td>
+                    <td>Blok</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <div class="katalog">
+
+            <div class="kartu">
+                <img src="prabubu.jpg" alt="Mainan Prabubu">
+                <h3>Prabubu</h3>
+            </div>
+
+            <div class="kartu">
+                <img src="hirono.jpg" alt="Mainan Hirono">
+                <h3>Hirono</h3>
+            </div>
+
+            <div class="kartu">
+                <img src="lego.jpg" alt="Mainan Lego">
+                <h3>Lego</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TAMBAH MAINAN -->
+
+    <section id="tambah-mainan">
+
+        <h2>Tambah Mainan</h2>
+
+        <form action="/simpan" method="post">
+
+            <div class="form-kolom">
+                <label for="nama">Nama Mainan</label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    required
+                >
+
+                <p class="pesan-galat">
+                    Nama mainan wajib diisi.
+                </p>
+            </div>
+
+
+            <div class="form-kolom">
+                <label for="harga">Harga</label>
+
+                <input
+                    type="number"
+                    id="harga"
+                    name="harga"
+                    min="1"
+                    required
+                >
+
+                <p class="pesan-galat">
+                    Harga harus diisi.
+                </p>
+            </div>
+
+
+            <div class="form-kolom">
+                <label for="kategori">Kategori</label>
+
+                <input
+                    type="text"
+                    id="kategori"
+                    name="kategori"
+                    required
+                >
+
+                <p class="pesan-galat">
+                    Kategori wajib diisi.
+                </p>
+            </div>
+
+            <button type="submit">Simpan</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- TENTANG KAMI -->
+
+    <section id="tentang-kami">
+
+        <h2>Tentang Kami</h2>
+
+        <p>
+            Toys Store adalah toko yang menyediakan
+            berbagai macam mainan untuk anak-anak
+            dan kolektor.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>Rifqi Van Baker · 2026</p>
+
+</footer>
+
+</body>
+</html>
