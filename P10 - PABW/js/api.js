@@ -1,11 +1,10 @@
 // js/api.js
-const ALAMAT = 'data/proyek.json';
+const ALAMAT = 'https://raw.githubusercontent.com/25523171/PABW---Muhammad-Rifqi-Van-Baker---25523171/refs/heads/main/P10%20-%20PABW/data/proyek.json';
 
 export async function ambilProyek() {
   try {
     const respons = await fetch(ALAMAT);
     
-    // Periksa status respons HTTP
     if (!respons.ok) {
       throw new Error('status ' + respons.status);
     }

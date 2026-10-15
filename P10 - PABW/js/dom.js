@@ -1,10 +1,10 @@
-// js/dom.js
+
 const wadah = document.querySelector("#daftar");
 const pesanKosong = document.querySelector("#kosong");
 const muatEl = document.querySelector("#muat");
 const barisFilter = document.querySelector("#filter-kategori");
 
-// Fungsi Pembuat Kartu Mainan
+
 export function buatKartu(item) {
   const kartu = document.createElement("div");
   kartu.className = "kartu";
@@ -38,7 +38,6 @@ export function buatKartu(item) {
   return kartu;
 }
 
-// Render Keadaan Berhasil / Kosong
 export function render(daftar) {
   if (!wadah) return;
   wadah.textContent = ""; 
@@ -60,12 +59,12 @@ export function render(daftar) {
   wadah.append(fragment);
 }
 
-// Keadaan Memuat
+
 export function aturMemuat(aktif) {
   if (muatEl) muatEl.hidden = !aktif;
 }
 
-// Keadaan Gagal
+
 export function tampilkanGalat(pesan) {
   if (wadah) wadah.textContent = "";
   if (pesanKosong) {
@@ -74,7 +73,7 @@ export function tampilkanGalat(pesan) {
   }
 }
 
-// Pasang Filter
+
 export function pasangFilter(daftar) {
   if (!barisFilter) return;
 
