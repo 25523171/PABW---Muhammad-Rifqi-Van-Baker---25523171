@@ -1,4 +1,3 @@
-// js/state.js
 import { render } from './dom.js';
 
 const KUNCI = "pabw-p11";
@@ -22,7 +21,7 @@ export function simpan(state) {
 export function muat() {
   try {
     const isi = JSON.parse(localStorage.getItem(KUNCI));
-    if (isi?.versi !== VERSI) {
+    if (isi?.ver  si !== VERSI) {
       localStorage.removeItem(KUNCI);
       return null;
     }
